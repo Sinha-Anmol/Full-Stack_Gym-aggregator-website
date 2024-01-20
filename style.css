@@ -1,0 +1,513 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oleo+Script+Swash+Caps&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Great+Vibes&display=swap'); */
+
+*{ /*removes extra spaces from website */
+    margin: 0; 
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 40px;
+    color: white;
+}
+
+    
+#navbar {
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    padding: 12px 14px;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0.6) top/cover;
+    background-blend-mode: darken;
+    position: fixed;
+    backdrop-filter: blur(8px);
+    /* box-shadow: 0 20px 30px rgba(0, 0, 0.15); */
+    
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+}
+
+#navbar li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    display: inline-block;
+}
+
+#navbar li{
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    font-size: 1rem;
+    font-weight: 200;
+    transition: all 0.5s ease-in-out;
+}
+
+#navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    font-size: 1rem;
+    font-weight: 200;
+    transition: all 0.5s ease-in-out;
+}
+
+#navbar li a:hover{
+    color: white;
+    text-decoration: none;
+    padding: auto;
+    font-size: 1.2rem;
+    transform: scale(1.2);
+}
+
+#introSection{
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: darken;
+    /* background: center / cover no-repeat url("/static/sample1.jpg");; */
+    opacity: 0.4px; 
+    height: 470px;
+    background: rgb(0, 0, 0, 0.5) center/cover no-repeat url("/static/sample10.webp");
+    /* font-style: 'Bangers',cursive; */
+    font-size: 40px; 
+    flex-direction: column;
+    height: 80vh;
+    
+}
+
+
+#introSection div.small{
+    /* -webkit-text-stroke: 0.5px black; */
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: rgb(221, 237, 221);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    /* font-family: 'Amita', cursive; */
+    font-family: 'Overlock', cursive;
+}
+
+#introSection .search {
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+    padding: 0px 4px;
+}
+
+#introSection .searchItem {
+    display: flex;
+    align-items: center;
+    margin-left: 46px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
+#introSection .searchItem1{
+    display: flex;
+    align-items: center;
+    color: rgb(240, 109, 109);
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+#introSection h1{
+    font-size: 7rem;
+    font-family: 'Aladin', cursive;
+    color: rgb(221, 237, 221);
+}
+
+#introSection h3{
+    color: black;
+    padding-left: 60px;
+    font-style: italic;
+}
+
+
+
+#introSection p{
+    color: gray;
+    border-right: 1px solid gray;
+    font-size: 15px;
+    margin-right: 10px;
+    margin: 10px;
+}
+
+#introSection .searchItem input {
+    outline: none;
+    border: none;
+    padding-left: 17px;
+    width: 46%;
+}
+
+
+
+#facilitiesSection {
+    height: 40vh;
+    display: flex;
+    border-bottom: solid 1px black;
+
+}
+
+#facilitiesSection .box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    color: black;
+    flex-direction: column;
+    padding:10px 15px;  
+}
+
+#facilitiesSection p{
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+    /* border: solid 1px black; */
+}
+
+#facilitiesSection h3{
+    color: black;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+#facilitiesSection div.small{
+    font-style: bold;
+    font-weight:700;
+}
+
+
+#facilitiesSection .firstHalf{
+    width: 70%;
+    display: flex;
+}
+
+#facilitiesSection .secondHalf{
+    border-radius: 30px;
+    background-color: rgb(200, 244, 200);
+    transition: all 0.2s ease-in-out;
+    margin-top: 1rem;
+    width: 200px;
+
+}
+
+#facilitiesSection .secondHalf:hover{
+    border-radius: 30px;
+    background-color: lightblue;
+    transform: scale(1.2);
+    color: black;
+}
+
+
+
+#facilitiesSection .secondHalf li {
+    height: 5vh;
+    width: 10vh;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    border-radius: 100%;
+}
+
+#facilitiesSection li a{
+    text-decoration: none;
+    padding: 9px 80px;
+    font-size: 1rem;
+    color: black;
+}
+
+div.people{
+    font-size: 150px;
+    padding-right: 35px;
+}
+
+#achievementSection {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    background-color: whitesmoke;
+    /* padding-left: 170px; */
+    display: flex;
+}
+
+#achievementSection div.card h5{
+    text-decoration: none;
+    /* margin: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    padding-top: 3;
+}
+
+#achievementSection li a{
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#achievementSection li{
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3rem;
+    height: 240;
+}
+
+/* #achievementSection h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#achievementSection div.card{
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    background-color: whitesmoke;
+    border: 0.1px solid black;
+    border-radius: 10px;
+    width: 331px;
+    margin: 20px 25px;
+    height: 209px;
+    font-size: 80px;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Exo', sans-serif;
+}
+
+#achievementSection.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#achievementSection div.card:hover{
+    /* display: block; */
+    justify-content: center;
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    width: 330px;
+    margin: 20px 25px;
+    height: 203px;
+    cursor: pointer; 
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+#achievementSection div.card h5:hover{
+    text-decoration: none;
+}
+
+
+#achievementSection .card-img img{
+    display: flex;
+    height: 169px;
+    width: 329px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#popular{
+    height: 200px;
+    background-color: rgb(250, 212, 218);
+}
+
+#sponserSection { 
+    height: 43vh;
+    display: flex;
+}
+
+#sponserSection .box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    color: black;
+    flex-direction: column;
+    padding:10px 15px;  
+}
+
+#sponserSection h2{
+    color: black;
+}
+
+#sponserSection div.small{
+    font-style: bold;
+    font-weight:700;
+}
+
+
+#sponserSection .firstHalf{
+    width: 70%;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+#sponserSection .secondHalf{
+    border-radius: 30px;
+    background-color: rgb(200, 244, 200);
+    transition: all 0.2s ease-in-out;
+}
+
+#sponserSection .secondHalf:hover{
+    border-radius: 30px;
+    background-color: skyblue;
+    transform: scale(1.2);
+}
+
+
+
+#sponserSection .secondHalf li {
+    height: 5vh;
+    width: 25vh;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    border-radius: 100%;
+}
+
+#sponserSection li a{
+    text-decoration: none;
+    padding: 9px 80px;
+    font-size: 1rem;
+    color: black;
+}
+
+#sponserSection li a:hover{
+    color: black;
+}
+
+#sponserSection div.people{
+    font-size: 180px;
+    padding-right: 35px;
+}
+
+#sponserSection h3{
+    color: black;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+#sponserSection p{
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+}
+
+
+#App{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 500px;
+    flex-direction: column;
+}
+
+#App img{
+    display: flex;
+    align-items: center;
+    padding-left: 550px;
+    height: 441px;
+    width: 970px;
+    padding-bottom: 34px;
+    padding-top: 0px;
+}
+
+#App h1{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    height: 203px;
+    background-color: rgb(200, 244, 200);
+    color: white;
+    color: black;
+    /* color: rgb(186, 215, 240); */
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+#footer li{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    color: black;
+    font-size: large;
+    /* color: rgb(186, 215, 240); */
+    
+}
+
+#footer div.somedia{
+    font-size: 64px;
+    
+}
+
+#footer div.somedia i:hover{
+    color: skyblue;
+}
+
+#footer div.somedia i{
+    /* color: rgb(186, 215, 240); */
+    color: black;
+    transition: all 0s ease-in-out;
+    margin: 0px 25px;
+}
+
+#footer .foot1{
+    width: 43%;
+    padding-top: 20px;
+}
+
+#footer .foot2{
+    width: 33%;
+    padding-left: 40px;
+    padding-top: 70px;
+}
+
+#footer .foot3{
+    width: 33%;
+    padding-top: 20px;
+    font-family: 'Arima Madurai', cursive;
+    /* color: rgb(197, 236, 251); */
+    
+
+}
+
+
+#bmi{
+    display: flex;
+    padding-top: 20px;
+}
+
+
+
+
