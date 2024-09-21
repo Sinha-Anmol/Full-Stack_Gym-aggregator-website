@@ -5,7 +5,7 @@ This website, operating on an aggregator model, connects the vibrant fitness ind
 
 
 ![Landing Page](./images/Landing.png)
-![Features](./images/Features.png)
+![Features](./images/Freatures.png)
 ![Lists](./images/Lists.png)
 ![Selection](./images/Selection.png)
 ![Components](./images/Components.png)
